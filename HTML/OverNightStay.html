@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overnight Stay</title>
+  </head>
+  <body>
+    <h1 class="header1">Overnight Stay</h1>
+    <div class="navbar">
+      <ul class="list">
+        <li class="navbar-items"><a href="HomePage.html">Home Page</a></li>
+        <li class="navbar-items">
+          <a href="OverNightStay.html">Overnight Stay</a>
+        </li>
+        <li class="navbar-items"><a href="Rent_a_car.html">Rent a Car</a></li>
+        <li class="navbar-items"><a href="Dining.html">Dining</a></li>
+        <li class="navbar-items"><a href="Activities.html">Activities</a></li>
+      </ul>
+      <div class="clientInfo">
+        <label class="name" id="name"
+          >Name: <input type="text" id="nameInput"
+        /></label>
+        <label class="email" id="email"
+          >Email Address: <input type="email" id="emailInput"
+        /></label>
+      </div>
+      <div class="checkInDate">
+        <label class="checkIn" id="checkInDate"
+          >Check-in Date: <input type="date" id="dateInput"
+        /></label>
+        <label class="numNgihts" id="numNgihts"
+          >How many nights?:
+          <input type="number" id="numNightsInput" min="1" max="28"
+        /></label>
+      </div>
+    </div>
+    <div class="radioRoom">
+      <fieldset id="radioSelection">
+        <legend>Room type options:</legend>
+        <input type="radio" id="queenRoom" name="radio" value="queenRoom" />
+        <label for="queenRoom">Queen Room</label>
+        <input type="radio" id="kingRoom" name="radio" value="kingRoom" />
+        <label for="kingroom">King Room</label>
+        <input type="radio" id="twoBRS" name="radio" value="twoBRS" />
+        <label for="twoBRS">Two-Bedroom Suite</label>
+      </fieldset>
+    </div>
+    <p id="massageRoom"></p>
+    <div class="numAandC">
+      <label for="numAdult" id="numberAdults"
+        >Number of Adults:
+        <input type="number" id="numAdultInput" min="1" max="2" required
+      /></label>
+      <label for="numChild" id="numberChildren"
+        >Number of Children<input
+          type="number"
+          id="numChildrenInput"
+          min="0"
+          max="4"
+      /></label>
+    </div>
+    <div class="radioDiscount">
+      <fieldset id="selectDiscount">
+        <legend id="radioBox2">Discount options:</legend>
+        <input type="radio" id="None" name="radio2" value="None" />
+        <label for="None">None</label>
+        <input type="radio" id="aaaSenior" name="radio2" value="aaaSenior" />
+        <label for="aaaSenior"> AAA/Senior</label>
+        <input type="radio" id="military" name="radio2" value="military" />
+        <label for="military">Military</label>
+      </fieldset>
+    </div>
+    <div class="tablePrice">
+      <table class="table">
+        <tr>
+          <td>Base room cost:</td>
+          <td>$<span id="baseRoomCost">0.00</span></td>
+        </tr>
+        <tr>
+          <td>Discount:</td>
+          <td>$<span id="discount">0.00</span></td>
+        </tr>
+        <tr>
+          <td>Discounted Cost:</td>
+          <td>$<span id=":discountCost">0.00</span></td>
+        </tr>
+        <tr>
+          <td>Tax:</td>
+          <td>$<span id="tax">0.00</span></td>
+        </tr>
+        <tr>
+          <td>Total cost of the stay:</td>
+          <td>$<span id="totalCost">0.00</span></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
